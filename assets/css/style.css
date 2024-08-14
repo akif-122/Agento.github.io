@@ -397,7 +397,9 @@ p {
 }
 
 @media (max-width: 991px) {
-
+    .hero{
+        padding-top: 100px;
+    }
 
     .hero-text {
         margin-bottom: 50px;
@@ -417,7 +419,7 @@ p {
 }
 
 @media (max-width: 575px) {
-
+   
     .hero .hero-text h1 {
         font-size: 35px;
     }
