@@ -105,6 +105,8 @@ p {
 
 }
 
+
+
 .header .nav-links ul li {
     margin: 5px 20px;
 }
@@ -213,6 +215,7 @@ p {
     min-height: 100vh;
     align-content: center;
     padding-top: 200px;
+    padding-bottom: 80px;
 }
 
 .hero .hero-text h1 {
@@ -220,7 +223,20 @@ p {
     font-weight: 700;
     color: var(--white);
 }
-
+.hero .hero-text ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.hero .hero-text ul li {
+    color: var(--white);
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.hero .hero-text ul li i{
+    margin-right: 10px;
+}
 .hero .hero-text h1 span {
     color: var(--light-green);
 }
@@ -311,6 +327,25 @@ p {
     color: var(--white);
 }
 
+.trade-mark-form{
+    max-width: 400px;
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 20px;
+}
+.trade-mark-form h4{
+    text-align: center;
+    font-weight: 700;
+    color: var(--dark);
+    font-size: 20px;
+}
+.trade-mark-form form{
+    margin-top: 20px;
+}
+.trade-mark-form form input{
+    height: 50px;
+}
+
 .hero .hero-img {
     position: relative;
     isolation: isolate;
@@ -397,6 +432,9 @@ p {
 }
 
 @media (max-width: 991px) {
+    .trade-mark-form{
+        max-width: 100%;
+    }
     .hero{
         padding-top: 100px;
     }
@@ -419,7 +457,16 @@ p {
 }
 
 @media (max-width: 575px) {
-   
+    .trade-mark-form h4{
+        font-size: 17px;
+    }
+    .trade-mark-form form input{
+        height: 40px;
+        font-size: 14px;
+    }
+    .trade-mark-form form textarea{
+        font-size: 14px;
+    }
     .hero .hero-text h1 {
         font-size: 35px;
     }
@@ -1090,12 +1137,84 @@ p {
 */
 /* 
 =========================================
+     POINT SECTION START
+=========================================
+*/
+.point-section{
+    padding: 50px 0;
+    background-color: var(--blue-dark);
+}
+.point-section .point-text{
+    color: #fff;
+}
+.point-section .point-text i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* 
+=========================================
+     POINT SECTION END
+=========================================
+*/
+
+/* 
+=========================================
+     FAQ SECTION START
+=========================================
+*/
+.faqs{
+    padding: 80px 0;
+}
+.faqs h2{
+    margin-bottom: 50px;
+}
+.faqs .faq{
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.25);
+}
+.faqs .faq h3{
+    font-size: 20px;
+    cursor: pointer;
+}
+/* 
+=========================================
+     FAQ SECTION END
+=========================================
+*/
+
+
+/* 
+=========================================
      FOOTER SECTION START
 =========================================
 */
 .footer {
-    background-color: var(--dark);
-    padding-top: 50px;
+    /* background-color: var(--dark); */
+    padding-top: 80px;
+    background: url("../imgs/ft-bg.webp"), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-position: center;
+    background-size: cover;
+}
+.footer .ft-content{
+    max-width: 400px;
+    margin: auto;
+    padding-bottom: 60px;
+    color: var(--white);
+}
+.footer .ft-content p{
+    color: var(--white);
+}
+.footer .ft-content a{
+    color: var(--white);
+    transition: .5s ease-in-out;
+}
+.footer .ft-content a:hover{
+    color: var(--light-green);
 }
 
 .footer .icons {
@@ -1152,9 +1271,10 @@ p {
 }
 
 .footer .ft-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    /* border-top: 1px solid rgba(255, 255, 255, 0.15); */
     padding: 15px 0;
     margin-top: 20px;
+    background-color: var(--dark);
 }
 
 .footer .ft-bottom ul {
