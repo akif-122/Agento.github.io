@@ -88,6 +88,58 @@ p {
     overflow: hidden;
 }
 
+
+
+.topModal .modal-header{
+    background-color: var(--blue-darker);
+    padding: 30px 10px;
+    position: relative;
+}
+.topModal .modal-header .btn-close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.topModal .modal-header h3{
+    color: var(--white);
+    font-size: 17px;
+    text-align: center;
+    margin: auto;
+}
+.topModal .modal-header .off{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: var(--white);
+    width: fit-content;
+    
+}
+.topModal .modal-header .off h4{
+    font-size: 14px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 0;
+}
+.topModal .trade-mark-form{
+    max-width: 100%;
+} 
+.topModal .trade-mark-form input{
+    height: 40px;
+    font-size: 13px;
+}
+.topModal .trade-mark-form textarea{
+    font-size: 14px;
+}
+@media (max-width: 575px){
+    .topModal .trade-mark-form{
+        padding: 0;
+    }
+}
 /*
 ===============================================
     HEADER SECTION START 
