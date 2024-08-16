@@ -34,6 +34,22 @@ p {
     font-size: 15px;
 }
 
+@media (max-width: 575px){
+    h2 {
+        font-size: 22px !important;
+    }
+    
+    h4 {
+        font-size: 18px !important;
+    }
+    h3{
+        font-size: 16px !important;
+    }
+    p {
+        font-size: 13px;
+    } 
+}
+
 .m-btn {
     all: unset;
     cursor: pointer;
@@ -48,10 +64,15 @@ p {
     font-weight: 500;
     transition: .5s ease-in-out;
 }
-
+.m-btn.btn-outline{
+    color: var(--light-green);
+    border: 1px solid var(--light-green);
+    background-color: transparent;
+}
 .m-btn:hover {
     color: var(--white);
     background-color: var(--dark-green);
+    border-color: var(--dark-green);
 }
 
 
@@ -1083,7 +1104,16 @@ p {
     margin: 15px 0;
     list-style: none;
     padding-left: 10px;
-
+    height: 200px;
+    overflow: auto;
+    
+}
+.price-section .price-slider .price-card ul::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+.price-section .price-slider .price-card ul::-webkit-scrollbar-thumb{
+    background-color: var(--blue-dark);
 }
 
 .price-section .price-slider .price-card ul li {
@@ -1130,35 +1160,42 @@ p {
 }
 
 .testimonials .clients .client {
-    width: calc(100% - 100px);
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
+    width: calc(100%);
+    border-radius: 20px;
     background-color: var(--white);
-    padding: 15px 30px;
-    padding-left: 20px;
-    margin-bottom: 30px;
+    padding: 15px 20px;
+    position: relative;
 }
 
-.testimonials .clients .client:nth-child(odd) {
-    margin-left: auto;
+.testimonials .clients .client .review-from{
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
-
-.testimonials .clients .client:nth-child(even) {
-    background-color: var(--blue-light);
-    color: var(--white);
+.testimonials .clients .client .review-from img{
+    width: 40px;
 }
 
 .testimonials .clients .client p {
     margin: 0;
 }
 
+.testimonials .clients .client .user-name h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.testimonials .clients .client .user-name .stars i{
+    font-size: 14px;
+    color: var(--blue-dark);
+}
 .testimonials .clients .client .img {
-    min-width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .testimonials .clients .client .img img {
@@ -1167,20 +1204,19 @@ p {
     object-fit: cover;
 }
 
-@media (max-width:991px) {
+/* @media (max-width:991px) {
     .testimonials .clients .client {
         width: calc(100% - 20px);
         border-radius: 20px;
         flex-direction: column;
-        text-align: center;
     }
 }
-
+*/
 @media (max-width:575px) {
-    .testimonials .clients .client {
-        padding: 20px;
+    .testimonials .clients .client p{
+        font-size: 13px;
     }
-}
+} 
 
 /* 
 =========================================
@@ -1202,6 +1238,12 @@ p {
 .point-section .point-text i{
     font-size: 30px;
     margin-right: 10px;
+}
+
+@media (max-width: 575px){
+    .point-section .point-text i{
+        font-size: 20px;
+    }
 }
 
 /* 
