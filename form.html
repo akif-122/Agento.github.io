@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
+
+    <!-- FONTAWESOME icon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+
+</head>
+
+<body>
+
+    <!-- MODAL  -->
+    <div class="modal fade topModal" id="modal">
+        <div class="modal-dialog modal-dialog-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Activate your Trademark Registration</h3>
+                    <div class="off">
+                        <h4>Register And get 50% Off</h4>
+                    </div>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="trade-mark-form">
+                        <form action="">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control shadow-none" placeholder="Enter Your Name *">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="email" class="form-control shadow-none" placeholder="Enter Your email *">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="number" class="form-control shadow-none" placeholder="(201) 555-0123">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="description" type="text" class="form-control shadow-none"
+                                    placeholder="What are you looking to protect? (e.g. Name, Logo and Slogan) *"
+                                    style="min-height: 100px; resize: none"></textarea>
+                            </div>
+
+                            <div class="mt-4 d-grid">
+                                <button class="m-btn d-block  text-uppercase">Submit Now <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- MODAL END -->
+
+
+    <div class="wrapper">
+
+        <!-- HEADER SECTION START -->
+        <header class="header position-relative bg-green">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="assets/imgs/logo.png" alt="">
+                    </a>
+
+
+                    <div class="nav-links  mx-auto " id="navs">
+
+                        <button class="nav-close d-block d-lg-none" id="navClose"><i
+                                class="fa-solid fa-xmark"></i></button>
+
+                        <ul class="navbar-nav">
+                            <li>
+                                <a href="#"><i class="fa-solid fa-phone"></i> (872) 231-4194 </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-headphones"></i> Talk To A Consultant</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="nav-right me-3">
+                        <button data-bs-target="#modal" data-bs-toggle="modal" class="m-btn">Get Started</button>
+                    </div>
+
+                    <div class="d-block d-lg-none">
+                        <button class="nav-toggle" id="navOpener"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <!-- HEADER SECTION END -->
+
+
+        <div class="form-section">
+            <div class="container">
+                <form action="#">
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label class="form-label">Select what you are trying to
+                                    protect.<span>*</span></label>
+                                <select class="form-select" required="">
+                                    <option value="" selected="">Choose...</option>
+                                    <option value="Name">Name</option>
+                                    <option value="Slogan">Slogan</option>
+                                    <option value="Logo">Logo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label class="form-label">Enter the Name you wish to protect.<span
+                                        class="sub-text">*</span></label>
+                                <input class="form-control" type="text" placeholder="Complete Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label class="form-label">Enter the Slogan you wish to
+                                    protect.<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Slogan Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label class="form-label">Enter the Logo you wish to protect.<span>*</span></label>
+                                <input class="form-control" type="file" accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label class="form-label">Will the trademark be owned by an
+                                    individual or an entity such as a corporation or LLC?</label>
+                                <select class="form-select " required="">
+                                    <option value="" selected="">Choose...</option>
+                                    <option value="Individual">Individual</option>
+                                    <option value="Organization">Organization</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Your Full Name.<span>*</span></label>
+                                <input class="form-control" type="text" s placeholder="Enter Your Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Your Email Address.<span>*</span></label>
+                                <input class="form-control" type="email" placeholder="E-Mail Address">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Your Country<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Complete Address">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Your City.<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Enter Your City.">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Your Street Address.<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Enter Your States.">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label for="CustomerPhone" class="form-label">Zip Code / Postal
+                                    Code.<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Enter Your States.">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 ">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Your State.<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Enter Your States.">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label class="form-label">Organization Type.<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Organization Type" required="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+                            <div class="mb-3">
+                                <label for="OrganizationName" class="form-label">Enter Your Business
+                                    Name<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Enter Your Business Name"
+                                    required="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Your Street Address.<span>*</span></label>
+                                <input class="form-control" type="text" id="BusinessAddress" name="BusinessAddress"
+                                    placeholder="Enter Your Street Address">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Your City.<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Enter Your City.">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Business Phone Number.<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Phone Number" maxlength="10"
+                                    required="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12 ">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Your States.<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Enter Your States.">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="mb-3">
+                                <label class="form-label">Zip Code / Postal Code<span>*</span></label>
+                                <input class="form-control" type="text" placeholder="Zip Code / Postal Code">
+                            </div>
+                        </div>
+                        <div class="row pe-0 pe-md-0">
+                            <div class="col-lg-6 col-md-6 col-sm-12 pe-0 pe-md-1 ">
+                                <div class="mb-3">
+                                    <label class="form-label">Enter Your Country.<span>*</span></label>
+                                    <input class="form-control" type="text" placeholder="Enter Your Country."
+                                        required="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30 ">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Business Description.<span>*</span></label>
+                                <textarea class="form-control" required="" type="text"
+                                    placeholder="Kindly elaborate about the Goods and Services you provide at your Business"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+                            <button class="m-btn" type="button">submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <!-- FOOTER SECTION START -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 mx-auto">
+                        <div class="ft-content text-center">
+                            <div class="logo">
+                                <img src="assets/imgs/logo.png" alt="">
+                            </div>
+                            <h2>Still Got Questions?</h2>
+
+                            <p>
+                                <i class="fa-solid fa-envelope me-2"></i>
+                                <a href="mailto:info@trademarkpathway.com">info@trademarkpathway.com</a>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope me-2"></i>
+                                <a href="mailto:sales@trademarkpathway.com">sales@trademarkpathway.com</a>
+                            </p>
+                            <p><i class="fa-solid fa-phone me-2"></i><a href="tel:866-986-1742">866-986-1742</a></p>
+
+                            <p><i class="fa-solid fa-location-dot me-2"></i> 1000 Grandy’s Ln Apt 2218
+                                Lewisville Tx 75077</p>
+
+                            <div class="d-grid">
+                                <a href="#" class="m-btn"><i class="fa-solid fa-headphones"></i> Talk To A
+                                    Consultant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="ft-about">
+                            <img src="assets/imgs/logo.png" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati saepe, ullam mollitia
+                                eos voluptates ea odit sit, ex dolores nulla esse officiis tempore in fugit veritatis
+                                eveniet beatae fugiat adipisci!</p>
+                            <ul class="icons">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6 mb-4 mb-lg-0">
+                        <h3>Useful Links</h3>
+
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">How its work</a></li>
+                            <li><a href="#">Buy Coin</a></li>
+                            <li><a href="#">Explore Now</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <h3>Our Community</h3>
+
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">How its work</a></li>
+                            <li><a href="#">Buy Coin</a></li>
+                            <li><a href="#">Explore Now</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <h3>Company Resources</h3>
+
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">How its work</a></li>
+                            <li><a href="#">Buy Coin</a></li>
+                            <li><a href="#">Explore Now</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+
+                </div> -->
+
+
+            </div>
+            <div class="ft-bottom ">
+                <div class="container">
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+
+
+                        <p class="m-0 text-center text-md-start ">Copyright © 2024 IP Bureau. All Rights Reserved.
+                        </p>
+
+                        <ul class="list-unstyled d-flex align-items-center">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER SECTION END -->
+    </div>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- OWL CAROUSEL CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- BOOTSRAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
